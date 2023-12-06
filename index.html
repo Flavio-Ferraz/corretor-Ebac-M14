@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"><!--Este link importa os icons do bootstrap-->
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho"><!--O sticky-top faz com que a barra do cabeçalho permaneça visível no topo enquanto fazemos a rolagem da página-->
+        <div class="container"><!--este container centraliza os conteúdos, como logo e links, no cabeçalho-->
+            <h1 class="navbar-brand m-0 section-title fw-bold fs-3">Corretor Imobiliário</h1><!--o m-0 retirou uma margem colocada por padrão no logo dentro da caixa que afetava a centralização vertical dela-->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao"><!--navbar-collapse e collapse fazem com que os links deem uma juntada com a logo. Corrigimos isso com o justify-content-end-->
+                <ul class="nav nav-pills d-block d-md-flex"><!--Em se tratando do d-block, ele só funcionará para telas sm e será flex a partir de telas sm no d-md-flex--><!--nav-pills faz com que os links fiquem sem os bullets e alinha os links-->
+                    <li class="nav-item fw-bold"><!--nav-item e nav-link fazem os links ficarem espaçados. O active dá o aspecto de botão ao link-->
+                        <a href="#nossoNegocio"class="nav-link">
+                            <i class="bi bi-house-door me-1"></i><!--me-1 (margin end - 1, tipo uma margin right) aplica uma pequena margem, distanciando o ícone casa da palavra-->
+                            Sobre o Corretor
+                        </a>                        
+                    </li>
+                    <li class="nav-item fw-bold"><!--fw-bold aplica negrito à fonte pelo bootstrap-->
+                        <a href="#servicos"class="nav-link ">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Categoria de Imóveis</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#imoveis"class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Imóveis Disponíveis</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco"class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true"><!--Essa div faz com que os links do cabeçalho se destaquem enquanto passamos pela section referente a eles-->
+        <section id="sobre-o-negocio">
+            <div class="carousel slide w-100" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="imoveis/chavesMao.jpg" alt="chaves na mão">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                            <img src="imoveis/escolha.jpg" alt="Pensando na decoração">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                            <img src="imoveis/minhaCasa.jpg" alt="minha casa minha vida">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5" id="nossoNegocio">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="imoveis/corretor-de-imoveis.jpg" alt="Foto do espaço interno do restaurante" class="d-block w-100 rounded">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Como podemos <span class="text-colored">ajudar você</span></h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptas possimus assumenda voluptate doloremque delectus dolor sunt iusto, nobis, deserunt libero facilis qui necessitatibus nulla obcaecati sed id asperiores recusandae?
+                            </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">novos empreendimentos</span></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor perspiciatis aperiam porro quo animi quibusdam quod nisi culpa? Perferendis atque consequatur ullam ea et alias provident quam laboriosam quibusdam!</p>
+                            <ul>
+                                <li>Casas</li>
+                                <li>Apartamentos</li>
+                                <li>Comerciais</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="servicos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Conheça nossos <span class="text-colored">serviços</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="imoveis/avaliacao-imobiliaria.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored">
+                            <i class="bi bi-clipboard-data-fill fs-4"></i>
+                            Avaliação imobiliária
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, minus eveniet ullam vel voluptate reprehenderit odit ad eius incidunt modi adipisci, asperiores numquam nobis dolor, nihil consequatur tempora iste corrupti.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="imoveis/intermediacao.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored">
+                            <i class="bi bi-people-fill fs-4"></i>
+                            Intermediação de compra e venda</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, minus eveniet ullam vel voluptate reprehenderit odit ad eius incidunt modi adipisci, asperiores numquam nobis dolor, nihil consequatur tempora iste corrupti.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="imoveis/gestao.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored">
+                            <i class="bi bi-cash-coin fs-4"></i>
+                            Gestão de aluguéis</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, minus eveniet ullam vel voluptate reprehenderit odit ad eius incidunt modi adipisci, asperiores numquam nobis dolor, nihil consequatur tempora iste corrupti.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="imoveis" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Imóveis <span class="text-colored ">disponíveis</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-imoveis">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-sem-alcool" class="fw-bold text-start nav-link  text-colored active">Imóveis Rurais</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas" class="fw-bold text-start nav-link  text-colored">Casas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class="fw-bold text-start nav-link  text-colored">Apartamentos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais" class="fw-bold text-start nav-link  text-colored">Terrenos</button>                           
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="bebidas-sem-alcool">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="imoveis/imgRural.jpg"refrigerante">
+                                        <h5 class="text-colored mt-2 fw-bold">Sítio</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="imoveis/imgRural.jpg" alt="suco">
+                                        <h5 class="text-colored mt-2 fw-bold">Sítio</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="imoveis/imgRural.jpg" alt="">
+                                        <h5 class="text-colored fw-bold">Sítio</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="imoveis/imgRural.jpg" alt="">
+                                        <h5 class="text-colored fw-bold">Sítio</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="imoveis/imgRural.jpg" alt="">
+                                        <h5 class="text-colored fw-bold">Sítio</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="imoveis/imgRural.jpg" alt="">
+                                        <h5 class="text-colored fw-bold">Sítio</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="bebidas-alcoolicas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="imoveis/imgCasa.jpg" alt="Casa">
+                                        <h5 class="text-colored mt-2 fw-bold">Casa</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="imoveis/imgCasa.jpg" alt="Casa">
+                                        <h5 class="text-colored mt-2 fw-bold">Casa</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="imoveis/imgCasa.jpg" alt="Casa">
+                                        <h5 class="text-colored mt-2 fw-bold">Casa</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="imoveis/imgCasa.jpg" alt="Casa">
+                                        <h5 class="text-colored mt-2 fw-bold">Casa</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="imoveis/imgCasa.jpg" alt="Casa">
+                                        <h5 class="text-colored mt-2 fw-bold">Casa</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="imoveis/imgCasa.jpg" alt="vinho">
+                                        <h5 class="text-colored mt-2 fw-bold">Casa</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="entradas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="imoveis/imgApartamento.jpg" alt="apartamento">
+                                        <h5 class="text-colored mt-2 fw-bold">Apartamentos</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="imoveis/imgApartamento.jpg" alt="apartamento">
+                                        <h5 class="text-colored mt-2 fw-bold">Apartamentos</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="imoveis/imgApartamento.jpg" alt="apartamento">
+                                        <h5 class="text-colored mt-2 fw-bold">Apartamentos</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="imoveis/imgApartamento.jpg" alt="apartamento">
+                                        <h5 class="text-colored mt-2 fw-bold">Apartamentos</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="pratos-principais">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="imoveis/imgTerreno.jpg" alt="terreno">
+                                        <h5 class="text-colored mt-2 fw-bold">Terreno</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="imoveis/imgTerreno.jpg" alt="terreno">
+                                        <h5 class="text-colored mt-2 fw-bold">Terreno</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="imoveis/imgTerreno.jpg" alt="terreno">
+                                        <h5 class="text-colored mt-2 fw-bold">Terreno</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="imoveis/imgTerreno.jpg" alt="terreno">
+                                        <h5 class="text-colored mt-2 fw-bold">Terreno</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </div>  
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="imoveis/imgTerreno.jpg" alt="terreno">
+                                        <h5 class="text-colored mt-2 fw-bold">Terreno</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="imoveis/imgTerreno.jpg" alt="terreno">
+                                        <h5 class="text-colored mt-2 fw-bold">Terreno</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    </div>                                      
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">Conosco</span></h2>
+                    <div class="row">
+                        <div class="col-md-7 mb-5">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                    <input type="text" id="nome" class="form-control"  name="nome" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label fw-bold text-colored" required>Seu e-mail</label>
+                                    <input type="email" id="email" class="form-control" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefone" " class="form-label fw-bold text-colored">Seu telefone (opcional) </label>
+                                    <input type="tel" id="telefone" class="form-control" name="tel">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensagem" class="form-label fw-bold text-colored" required>Sua mensagem</label>
+                                    <textarea id="mensagem" class="form-control" name="mensagem" required></textarea>
+                                </div>
+                                <button type="submit" class="btn fw-bold">Enviar</button>
+                            </form>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row">
+                                <h3 class="section-title fs-4 text-colored">
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    Redes sociais</h3>
+                                <ul class="social-links">
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i class="bi bi-facebook text-colored"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5 ms-1 me-1">
+                                        <a href="#">
+                                            <i class="bi bi-instagram text-colored"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i class="bi bi-whatsapp text-colored"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row mt-4">
+                                <h3 class="section-title fs-4 text-colored">
+                                    <i class="bi bi-cursor-fill"></i>
+                                    Endereço</h3>
+                                <p class="text-colored">Rua Prática n° 145, Bairro Bootstrap - São Paulo - SP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script><!--Inclusão do JQuery no projeto-->
+
+    <!--Aplicando máscara com JQuery-->
+    <script src="./JS/jquery.mask.min.js"></script>
+    <script src="./JS/jquery.validate.min.js"></script><!--arquivo para validação com JQuery-->
+    <script src="./JS/messages_pt_BR.min.js"></script><!--Arquivo para mensagem de validação em português-->
+
+    <script>
+        //Inclusão de máscara no campo telefonte
+        $(document).ready(function(){
+            $(`#telefone`).mask(`(00) 00000-0000`);
+
+            //inclusão de validações no formulário de contato
+            $(`form`).validate({
+                rules: {
+                    nome:{ // o JQValidate busca pelo nome, ao invés de class ou id.//
+                        required: true
+                    },
+                    email:{
+                        required: true, 
+                        email: true
+                    },
+                    mensagem:{
+                        required: true
+                    }
+                },
+                messages: {
+                    nome: 'Por favor, insira o seu nome',
+                    email: 'Por favor, insira seu e-mail',
+                    mensagem: 'Por favor, insira sua mensagem'
+                },
+                submitHandler: function(form){
+                    console.log(form)
+                },
+                invalidHandler: function(evento, validador){
+                    let camposIncorretos = validador.numberOfInvalids();
+                    if (camposIncorretos) {
+                        alert(`Existem ${camposIncorretos} campos incorretos no formulário de contato.`)
+                    }
+                }
+            })
+        })
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
